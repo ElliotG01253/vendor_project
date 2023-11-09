@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\eg593\\source\\repos\\VendorProject\\VendorProject\\VendorProject.csproj": {}
+    "C:\\Users\\eg593\\source\\repos\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\eg593\\source\\repos\\VendorProject\\VendorProject\\VendorProject.csproj": {
+    "C:\\Users\\eg593\\source\\repos\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\eg593\\source\\repos\\VendorProject\\VendorProject\\VendorProject.csproj",
+        "projectUniqueName": "C:\\Users\\eg593\\source\\repos\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj",
         "projectName": "VendorProject",
-        "projectPath": "C:\\Users\\eg593\\source\\repos\\VendorProject\\VendorProject\\VendorProject.csproj",
+        "projectPath": "C:\\Users\\eg593\\source\\repos\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj",
         "packagesPath": "C:\\Users\\eg593\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\eg593\\source\\repos\\VendorProject\\VendorProject\\obj\\",
+        "outputPath": "C:\\Users\\eg593\\source\\repos\\vendor_project\\VendorProject\\VendorProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

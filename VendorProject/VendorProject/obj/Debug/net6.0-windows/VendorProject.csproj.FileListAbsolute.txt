@@ -1,0 +1,17 @@
+C:\Users\eg593\source\repos\vendor_project\VendorProject\VendorProject\bin\Debug\net6.0-windows\VendorProject.exe
+C:\Users\eg593\source\repos\vendor_project\VendorProject\VendorProject\bin\Debug\net6.0-windows\VendorProject.deps.json
+C:\Users\eg593\source\repos\vendor_project\VendorProject\VendorProject\bin\Debug\net6.0-windows\VendorProject.runtimeconfig.json
+C:\Users\eg593\source\repos\vendor_project\VendorProject\VendorProject\bin\Debug\net6.0-windows\VendorProject.dll
+C:\Users\eg593\source\repos\vendor_project\VendorProject\VendorProject\bin\Debug\net6.0-windows\VendorProject.pdb
+C:\Users\eg593\source\repos\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.csproj.AssemblyReference.cache
+C:\Users\eg593\source\repos\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.Form1.resources
+C:\Users\eg593\source\repos\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.csproj.GenerateResource.cache
+C:\Users\eg593\source\repos\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\eg593\source\repos\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.AssemblyInfoInputs.cache
+C:\Users\eg593\source\repos\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.AssemblyInfo.cs
+C:\Users\eg593\source\repos\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.csproj.CoreCompileInputs.cache
+C:\Users\eg593\source\repos\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.dll
+C:\Users\eg593\source\repos\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\refint\VendorProject.dll
+C:\Users\eg593\source\repos\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.pdb
+C:\Users\eg593\source\repos\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.genruntimeconfig.cache
+C:\Users\eg593\source\repos\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\ref\VendorProject.dll
