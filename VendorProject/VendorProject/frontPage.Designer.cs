@@ -29,171 +29,161 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frontPage));
-            userNameBox = new TextBox();
-            passwordBox = new TextBox();
-            label1 = new Label();
-            label2 = new Label();
-            logInButton = new Button();
-            groupBox1 = new GroupBox();
-            label3 = new Label();
-            label4 = new Label();
-            pictureBox1 = new PictureBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            SuspendLayout();
+            this.userNameBox = new System.Windows.Forms.TextBox();
+            this.passwordBox = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.logInButton = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.SuspendLayout();
             // 
             // userNameBox
             // 
-            userNameBox.Location = new Point(94, 22);
-            userNameBox.Name = "userNameBox";
-            userNameBox.Size = new Size(100, 23);
-            userNameBox.TabIndex = 0;
-            userNameBox.TextChanged += textBox1_TextChanged;
+            this.userNameBox.Location = new System.Drawing.Point(94, 22);
+            this.userNameBox.Name = "userNameBox";
+            this.userNameBox.Size = new System.Drawing.Size(100, 23);
+            this.userNameBox.TabIndex = 0;
             // 
             // passwordBox
             // 
-            passwordBox.Location = new Point(94, 51);
-            passwordBox.Name = "passwordBox";
-            passwordBox.Size = new Size(100, 23);
-            passwordBox.TabIndex = 1;
-            passwordBox.TextChanged += textBox2_TextChanged;
+            this.passwordBox.Location = new System.Drawing.Point(94, 51);
+            this.passwordBox.Name = "passwordBox";
+            this.passwordBox.Size = new System.Drawing.Size(100, 23);
+            this.passwordBox.TabIndex = 1;
             // 
             // label1
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(17, 23);
-            label1.Name = "label1";
-            label1.Size = new Size(71, 19);
-            label1.TabIndex = 2;
-            label1.Text = "Username";
-            label1.Click += label1_Click;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(17, 23);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 19);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Username";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(17, 51);
-            label2.Name = "label2";
-            label2.Size = new Size(67, 19);
-            label2.TabIndex = 3;
-            label2.Text = "Password";
-            label2.Click += label2_Click;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(17, 51);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(67, 19);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Password";
             // 
             // logInButton
             // 
-            logInButton.Location = new Point(94, 80);
-            logInButton.Name = "logInButton";
-            logInButton.Size = new Size(75, 23);
-            logInButton.TabIndex = 0;
-            logInButton.Text = "Log In";
-            logInButton.UseVisualStyleBackColor = true;
-            logInButton.Click += logInButton_Click;
+            this.logInButton.Location = new System.Drawing.Point(94, 80);
+            this.logInButton.Name = "logInButton";
+            this.logInButton.Size = new System.Drawing.Size(75, 23);
+            this.logInButton.TabIndex = 0;
+            this.logInButton.Text = "Log In";
+            this.logInButton.UseVisualStyleBackColor = true;
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(userNameBox);
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Controls.Add(logInButton);
-            groupBox1.Controls.Add(passwordBox);
-            groupBox1.Location = new Point(690, 12);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(200, 109);
-            groupBox1.TabIndex = 4;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Log In";
-            groupBox1.Enter += groupBox1_Enter;
+            this.groupBox1.Controls.Add(this.userNameBox);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.logInButton);
+            this.groupBox1.Controls.Add(this.passwordBox);
+            this.groupBox1.Location = new System.Drawing.Point(690, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(200, 109);
+            this.groupBox1.TabIndex = 4;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Log In";
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(690, 143);
-            label3.Name = "label3";
-            label3.Size = new Size(87, 19);
-            label3.TabIndex = 5;
-            label3.Text = "Access Level:";
-            label3.Click += label3_Click;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(690, 143);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 19);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "Access Level:";
             // 
             // label4
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(729, 124);
-            label4.Name = "label4";
-            label4.Size = new Size(48, 19);
-            label4.TabIndex = 6;
-            label4.Text = "Name:";
-            label4.Click += label4_Click;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(729, 124);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(48, 19);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Name:";
             // 
             // pictureBox1
             // 
-            pictureBox1.BackColor = Color.FromArgb(254, 254, 252);
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(295, 167);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 7;
-            pictureBox1.TabStop = false;
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(252)))));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(295, 167);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
-            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button1.Location = new Point(367, 199);
-            button1.Name = "button1";
-            button1.Size = new Size(223, 44);
-            button1.TabIndex = 8;
-            button1.Text = "View Vendors";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(367, 199);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(223, 44);
+            this.button1.TabIndex = 8;
+            this.button1.Text = "View Vendors";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            button2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button2.Location = new Point(367, 249);
-            button2.Name = "button2";
-            button2.Size = new Size(223, 44);
-            button2.TabIndex = 9;
-            button2.Text = "Create Vendors";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button2.Location = new System.Drawing.Point(367, 249);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(223, 44);
+            this.button2.TabIndex = 9;
+            this.button2.Text = "Create Vendors";
+            this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            button3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            button3.Location = new Point(367, 299);
-            button3.Name = "button3";
-            button3.Size = new Size(223, 44);
-            button3.TabIndex = 10;
-            button3.Text = "Edit Vendors";
-            button3.UseVisualStyleBackColor = true;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button3.Location = new System.Drawing.Point(367, 299);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(223, 44);
+            this.button3.TabIndex = 10;
+            this.button3.Text = "Edit Vendors";
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // frontPage
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(254, 254, 253);
-            ClientSize = new Size(902, 549);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(pictureBox1);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(groupBox1);
-            Name = "Form1";
-            Text = "frontPage";
-            Load += Form1_Load;
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ResumeLayout(false);
-            PerformLayout();
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(254)))), ((int)(((byte)(254)))), ((int)(((byte)(253)))));
+            this.ClientSize = new System.Drawing.Size(902, 549);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.groupBox1);
+            this.Name = "frontPage";
+            this.Text = "frontPage";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion

@@ -24,5 +24,10 @@ namespace VendorProject
             f1.ShowDialog();
             this.Close();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

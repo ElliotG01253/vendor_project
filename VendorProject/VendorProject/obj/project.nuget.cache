@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UjHhnugzkYiOqSXeGEd0sP5MWkdqbkRwODG6uy/yIqvdYhjlk1L+Vl2QthlUkltClbCEmYCUhr3cIgGwDXvh/g==",
+  "dgSpecHash": "+xqbNigLZmSnWy3W00U80MYD8h5FIGN5eibkuvUNLedBTKFtrEsWSO7k+RRWkm826W5cI65Gd6cxv2zDNUDE+w==",
   "success": true,
-  "projectFilePath": "D:\\Vendor_group_project\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Elliot\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\Elliot\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\Elliot\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\Elliot\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\eg593\\AppData\\Local\\Development\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
