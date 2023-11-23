@@ -28,9 +28,9 @@ namespace VendorProject.Properties {
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\accountInfo.m" +
             "df;Integrated Security=True;Connect Timeout=30")]
-        public string usersConnectionString {
+        public string DBConnectionString {
             get {
-                return ((string)(this["usersConnectionString"]));
+                return ((string)(this["DBConnectionString"]));
             }
         }
     }

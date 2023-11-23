@@ -10,27 +10,24 @@ namespace VendorProject
     {
         public void changeForm(string formName)
         {
-            frontPage frontPage = new frontPage();
-            viewVendors viewVendors = new viewVendors();
-            createVendors createVendors = new createVendors();
-
             Form currentForm = Form.ActiveForm; //set current form variable to the active form
             currentForm.Hide();
-            if(formName == "frontPage")//if statements show the given form
+            if (formName == "frontPage")//if statements show the given form
             {
+                frontPage frontPage = new frontPage();
                 frontPage.ShowDialog();
             }
             if (formName == "viewVendors")
             {
+                viewVendors viewVendors = new viewVendors();
                 viewVendors.ShowDialog();
             }
             if (formName == "createVendors")
             {
-                createVendors.showDialog();
+                createVendors createVendors = new createVendors();
+                createVendors.ShowDialog();
             }
             currentForm.Close();//closes the previous form
-
         }
-        
     }
 }

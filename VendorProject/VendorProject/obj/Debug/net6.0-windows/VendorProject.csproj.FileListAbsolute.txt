@@ -20,8 +20,6 @@ D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\bin\Debug\net
 D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\bin\Debug\net6.0-windows\VendorProject.runtimeconfig.json
 D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\bin\Debug\net6.0-windows\VendorProject.dll
 D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\bin\Debug\net6.0-windows\VendorProject.pdb
-D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.csproj.AssemblyReference.cache
-D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.Form1.resources
 D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.Properties.Resources.resources
 D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.csproj.GenerateResource.cache
 D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.GeneratedMSBuildEditorConfig.editorconfig
@@ -34,8 +32,6 @@ D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\obj\Debug\net
 D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.pdb
 D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.genruntimeconfig.cache
 D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\ref\VendorProject.dll
-D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.Form2.resources
-D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.Form3.resources
 C:\Users\eg593\AppData\Local\Development\vendor_project\VendorProject\VendorProject\bin\Debug\net6.0-windows\VendorProject.exe
 C:\Users\eg593\AppData\Local\Development\vendor_project\VendorProject\VendorProject\bin\Debug\net6.0-windows\VendorProject.dll.config
 C:\Users\eg593\AppData\Local\Development\vendor_project\VendorProject\VendorProject\bin\Debug\net6.0-windows\VendorProject.deps.json
@@ -57,3 +53,15 @@ C:\Users\eg593\AppData\Local\Development\vendor_project\VendorProject\VendorProj
 C:\Users\eg593\AppData\Local\Development\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.pdb
 C:\Users\eg593\AppData\Local\Development\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.genruntimeconfig.cache
 C:\Users\eg593\AppData\Local\Development\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\ref\VendorProject.dll
+D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\bin\Debug\net6.0-windows\VendorProject.dll.config
+D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.createVendors.resources
+D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.frontPage.resources
+D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.viewVendors.resources
+D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.csproj.AssemblyReference.cache
+D:\Vendor_group_project\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.csproj.CopyComplete
