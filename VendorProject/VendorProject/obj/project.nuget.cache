@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "f+Ma/yjSv8ByVu7gLYTltfTYAHkthswCs5hPzzGJ2+pmeGDDqfqV/iL58ZlVRVC8VDzm7WKPD+cuk5yN9Nt3VQ==",
+  "dgSpecHash": "3SB3mfNmTFAzFhBKLyzLGTVQyBsDWSEvVqy87nP1vI88Cb2YgoUEPQ5otU8cC71ciUnw/PTFan4Emkq8wrtNIA==",
   "success": true,
-  "projectFilePath": "D:\\Vendor_group_project\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj",
+  "projectFilePath": "C:\\Users\\Elliot\\Source\\Repos\\ElliotG01253\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Elliot\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Elliot\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

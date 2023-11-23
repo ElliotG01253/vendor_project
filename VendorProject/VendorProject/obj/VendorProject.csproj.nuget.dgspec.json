@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Vendor_group_project\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj": {}
+    "C:\\Users\\Elliot\\Source\\Repos\\ElliotG01253\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj": {}
   },
   "projects": {
-    "D:\\Vendor_group_project\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj": {
+    "C:\\Users\\Elliot\\Source\\Repos\\ElliotG01253\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Vendor_group_project\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj",
+        "projectUniqueName": "C:\\Users\\Elliot\\Source\\Repos\\ElliotG01253\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj",
         "projectName": "VendorProject",
-        "projectPath": "D:\\Vendor_group_project\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj",
+        "projectPath": "C:\\Users\\Elliot\\Source\\Repos\\ElliotG01253\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj",
         "packagesPath": "C:\\Users\\Elliot\\.nuget\\packages\\",
-        "outputPath": "D:\\Vendor_group_project\\vendor_project\\VendorProject\\VendorProject\\obj\\",
+        "outputPath": "C:\\Users\\Elliot\\Source\\Repos\\ElliotG01253\\vendor_project\\VendorProject\\VendorProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
