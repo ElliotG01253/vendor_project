@@ -8,6 +8,10 @@ namespace VendorProject
 {
     public class formChanger
     {
+        /// <summary>
+        /// changes the form based on input
+        /// </summary>
+        /// <param name="formName"> Name of destination form</param>
         public void changeForm(string formName)
         {
             Form currentForm = Form.ActiveForm; //set current form variable to the active form

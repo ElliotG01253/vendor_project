@@ -22,18 +22,16 @@ namespace VendorProject
             DataTable dt = ds.Tables[0];
             tempDataGrid.DataSource = dt;
         }
-
+        /// <summary>
+        /// takes username and password inputs to validate
+        /// </summary>
         private void logInButton_Click(object sender, EventArgs e)
         {
             string username = userNameBox.Text;
             string password = passwordBox.Text;
+            loginVerify loginVerify = new loginVerify();
+            loginVerify.loginVerification(username, password);
         }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
 
