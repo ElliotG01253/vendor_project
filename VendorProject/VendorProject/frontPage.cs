@@ -1,7 +1,11 @@
+using System.Data;
+
 namespace VendorProject
 {
     public partial class frontPage : Form
     {
+        formChanger formChanger = new formChanger();
+
         public frontPage()
         {
             InitializeComponent();
@@ -9,9 +13,15 @@ namespace VendorProject
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            updateGridView();
         }
 
+        private void updateGridView()
+        {
+            DataSet ds = DBConnection.GetDBConnection().GetDataSet("SELECT * FROM loginInfo");
+            DataTable dt = ds.Tables[0];
+            tempDataGrid.DataSource = dt;
+        }
 
         private void logInButton_Click(object sender, EventArgs e)
         {
@@ -26,20 +36,13 @@ namespace VendorProject
 
         private void button1_Click(object sender, EventArgs e)
         {
-           /* this.Hide();
-            viewVendors f2 = new viewVendors();
-            f2.ShowDialog();
-            this.Close();
-            */
 
+            formChanger.changeForm("viewVendors");
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            createVendors f3 = new createVendors();
-            f3.ShowDialog();
-            this.Close();
+            formChanger.changeForm("createVendors");
         }
     }
 }
