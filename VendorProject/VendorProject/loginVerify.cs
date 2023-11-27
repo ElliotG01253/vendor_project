@@ -14,12 +14,12 @@ namespace VendorProject
             // to help me :https://learn.microsoft.com/en-us/dotnet/api/system.data.datatable?view=net-8.0
             DataSet ds = DBConnection.GetDBConnection().GetDataSet("SELECT * FROM loginInfo");
             DataTable dt = ds.Tables[0];
-            DataRow[] dr = dt.Select("SELECT Username, Password");
+            DataRow[] dr = dt.Select();
             foreach (DataRow dataRow in dr)
             {
-                if (dataRow[0].ToString() == username)
+                if (dataRow[1].ToString() == username)
                 {
-                    if (dataRow[1].ToString() == password)
+                    if (dataRow[2].ToString() == password)
                     {
                         //set a class "user" account info 
                     }

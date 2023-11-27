@@ -22,9 +22,9 @@ namespace VendorProject
         {
 
             //connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C: \\Users\\eg593\\AppData\\Local\\Development\\vendor_project\\VendorProject\\VendorProject\\accountInfo.mdf";
-            //connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Vendor_group_project\\vendor_project\\VendorProject\\VendorProject\\accountInfo.mdf;Integrated Security=True";
+            connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Vendor_group_project\\vendor_project\\VendorProject\\VendorProject\\accountInfo.mdf;Integrated Security=True";
             //connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\accountInfo.mdf;Integrated Security=True;";
-            connectionString = Properties.Settings.Default.DBConnectionString;
+            //connectionString = Properties.Settings.Default.DBConnectionString;
         }
         /// <summary>
         /// method to check if there is allready an instance of the database connection and if there is it just returns the DB connection string
