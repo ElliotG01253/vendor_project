@@ -94,6 +94,7 @@
             logInButton.TabIndex = 0;
             logInButton.Text = "Log In";
             logInButton.UseVisualStyleBackColor = true;
+            logInButton.Click += logInButton_Click;
             // 
             // groupBox1
             // 
