@@ -35,9 +35,9 @@ namespace VendorProject
         private void setUser(string username, int userId)
         {
             DataSet ds = DBConnection.GetDBConnection().GetDataSet($"SELECT g.name FROM groups_users gu , groups g where g.id = gu.groups_id AND gu.users_id = {userId}");
-             User user = new User();
+            User user = new User();
             user.setter(userId, ds.Tables[0].Rows[0]["group"].ToString()!);
 
-        }   
+        }
     }
 }
