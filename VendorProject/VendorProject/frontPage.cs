@@ -2,10 +2,16 @@ using System.Data;
 
 namespace VendorProject
 {
+    /*
+     * todo:
+     * update other forms (proper coding practice)
+     * create user class
+     * 
+     */
     public partial class frontPage : Form
     {
         formChanger formChanger = new formChanger();
-
+        loginVerify loginVerify = new loginVerify();
         public frontPage()
         {
             InitializeComponent();
@@ -18,7 +24,7 @@ namespace VendorProject
 
         private void updateGridView()
         {
-            DataSet ds = DBConnection.GetDBConnection().GetDataSet("SELECT * FROM loginInfo");
+            DataSet ds = DBConnection.GetDBConnection().GetDataSet("SELECT * FROM Users");
             DataTable dt = ds.Tables[0];
             tempDataGrid.DataSource = dt;
         }
@@ -29,8 +35,8 @@ namespace VendorProject
         {
             string username = userNameBox.Text;
             string password = passwordBox.Text;
-            loginVerify loginVerify = new loginVerify();
             loginVerify.loginVerification(username, password);
+            //label3.Text = user.getGroup();
         }
         private void button1_Click(object sender, EventArgs e)
         {
