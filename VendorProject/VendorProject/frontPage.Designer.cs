@@ -37,7 +37,6 @@
             logInButton = new Button();
             groupBox1 = new GroupBox();
             label3 = new Label();
-            label4 = new Label();
             pictureBox1 = new PictureBox();
             button1 = new Button();
             button2 = new Button();
@@ -114,21 +113,12 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(690, 143);
+            label3.Location = new Point(690, 124);
             label3.Name = "label3";
             label3.Size = new Size(87, 19);
             label3.TabIndex = 5;
             label3.Text = "Access Level:";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.Location = new Point(729, 124);
-            label4.Name = "label4";
-            label4.Size = new Size(48, 19);
-            label4.TabIndex = 6;
-            label4.Text = "Name:";
+            label3.Click += label3_Click;
             // 
             // pictureBox1
             // 
@@ -201,7 +191,6 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
-            Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(groupBox1);
             Name = "frontPage";
@@ -226,7 +215,6 @@
         private Button logInButton;
         private GroupBox groupBox1;
         private Label label3;
-        private Label label4;
         private PictureBox pictureBox1;
         private Button button1;
         private Button button2;
