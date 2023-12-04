@@ -5,7 +5,7 @@ namespace VendorProject
     /*
      * todo:
      * update other forms (proper coding practice)
-     * create user class
+     * 
      * 
      */
     public partial class frontPage : Form
