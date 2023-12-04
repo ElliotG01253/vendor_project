@@ -8,15 +8,15 @@ namespace VendorProject
 {
     internal class User
     {
-        public int id;
-        public string? group;
+        private int id;
+        private string group;
 
-        public void setter(int userId, string userGroup)
+        public void Setter(int userId, string userGroup)
         {
             id = userId;
             group = userGroup;
         }
-        public int getUserId() { return id; }
-        public string getGroup() { return group!; }
+        public int GetUserId() { return id; }
+        public string GetGroup() { return group; }
     }
 }

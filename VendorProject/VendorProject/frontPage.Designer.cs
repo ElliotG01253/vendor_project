@@ -118,7 +118,6 @@
             label3.Size = new Size(87, 19);
             label3.TabIndex = 5;
             label3.Text = "Access Level:";
-            label3.Click += label3_Click;
             // 
             // pictureBox1
             // 
