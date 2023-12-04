@@ -9,13 +9,16 @@ namespace VendorProject
 {
     internal class loginVerify
     {
+        private int userID;
+        bool verified;
         /// <summary>
         /// Take the input username and password and checks they are in the Database then sets the user class
         /// </summary>
         /// <param name="username"></param>
         /// <param name="password"></param>
-        public void loginVerification(string username, string password)
+        public bool LoginVerification(string username, string password)
         {
+            verified = false;
             DataSet ds = DBConnection.GetDBConnection().GetDataSet("SELECT * FROM Users");
             DataTable dt = ds.Tables[0];
             DataRow[] dr = dt.Select();
@@ -25,19 +28,27 @@ namespace VendorProject
                 {
                     if (dataRow[2].ToString()!.Trim() == password)
                     {
+                        string tempstr = dataRow[0].ToString();
                         //set a class "user" account info 
-                        setUser(username, int.Parse(dataRow[0].ToString()!));
+                        userID = int.Parse(dataRow[0].ToString());
+                        GetUserGroup();
+                        verified = true;
                     }
                 }
             }
+            return verified;
         }
 
-        private void setUser(string username, int userId)
+        public string GetUserGroup()
         {
-            DataSet ds = DBConnection.GetDBConnection().GetDataSet($"SELECT g.name FROM groups_users gu , groups g where g.id = gu.groups_id AND gu.users_id = {userId}");
-            User user = new User();
-            user.setter(userId, ds.Tables[0].Rows[0]["group"].ToString()!);
+            DataSet ds = DBConnection.GetDBConnection().GetDataSet($"SELECT g.name FROM groups_users gu , groups g where g.id = gu.groups_id AND gu.users_id = {userID}");
 
+            string groupname = ds.Tables[0].Rows[0]["name"].ToString()!.Trim();
+            return groupname;
+        }
+        public int GetUserId()
+        {
+            return userID;
         }
     }
 }

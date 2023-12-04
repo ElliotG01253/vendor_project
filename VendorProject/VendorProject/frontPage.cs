@@ -12,6 +12,7 @@ namespace VendorProject
     {
         formChanger formChanger = new formChanger();
         loginVerify loginVerify = new loginVerify();
+        User user = new User();
         public frontPage()
         {
             InitializeComponent();
@@ -35,8 +36,13 @@ namespace VendorProject
         {
             string username = userNameBox.Text;
             string password = passwordBox.Text;
-            loginVerify.loginVerification(username, password);
-            //label3.Text = user.getGroup();
+            bool verified;
+            verified = loginVerify.LoginVerification(username, password);
+            if (verified)
+            {
+                user.Setter(loginVerify.GetUserId(), loginVerify.GetUserGroup());
+            }
+            label3.Text = "Access Level: " + user.GetGroup();
         }
         private void button1_Click(object sender, EventArgs e)
         {
