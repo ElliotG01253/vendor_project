@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Vendor_group_project\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj": {}
+    "C:\\Users\\Madin\\Source\\Repos\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj": {}
   },
   "projects": {
-    "D:\\Vendor_group_project\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj": {
+    "C:\\Users\\Madin\\Source\\Repos\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Vendor_group_project\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj",
+        "projectUniqueName": "C:\\Users\\Madin\\Source\\Repos\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj",
         "projectName": "VendorProject",
-        "projectPath": "D:\\Vendor_group_project\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj",
-        "packagesPath": "C:\\Users\\Elliot\\.nuget\\packages\\",
-        "outputPath": "D:\\Vendor_group_project\\vendor_project\\VendorProject\\VendorProject\\obj\\",
+        "projectPath": "C:\\Users\\Madin\\Source\\Repos\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj",
+        "packagesPath": "C:\\Users\\Madin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Madin\\Source\\Repos\\vendor_project\\VendorProject\\VendorProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Elliot\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Madin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -45,6 +45,10 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "dependencies": {
+            "System.Data.SQLite": {
+              "target": "Package",
+              "version": "[1.0.118, )"
+            },
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.5, )"
