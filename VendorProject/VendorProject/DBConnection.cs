@@ -32,6 +32,7 @@ namespace VendorProject
 
         public DataSet GetDataSet(string sqlStatement)
         {
+            DataSet dataSet = new DataSet();
             using (connectionToDB = new SqlConnection(connectionString))
             {
                 connectionToDB.Open();
@@ -39,7 +40,7 @@ namespace VendorProject
                 dataAdapter.Fill(dataSet);
                 connectionToDB.Close();
             }
-            }
+            
             return dataSet;
         }
         /// <summary>
