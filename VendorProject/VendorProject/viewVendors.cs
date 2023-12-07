@@ -16,7 +16,7 @@ namespace VendorProject
         {
             try
             {
-                DataSet dataSet = DBConnection.GetDBConnection().GetDataSet("SELECT * FROM Vendor_Information"); // Adjust your table name as needed
+                DataSet dataSet = DBConnection.GetDBConnection().GetDataSet("V", "SELECT * FROM Vendor_Information"); // Adjust your table name as needed
                 dataGridView1.DataSource = dataSet.Tables[0];
             }
             catch (Exception ex)
@@ -58,7 +58,7 @@ namespace VendorProject
             try
             {
                 var dbConnection = DBConnection.GetDBConnection();
-                var dataSet = dbConnection.GetDataSet(query);
+                var dataSet = dbConnection.GetDataSet("V", query);
                 dataGridView1.DataSource = dataSet.Tables[0];
             }
             catch (Exception ex)
