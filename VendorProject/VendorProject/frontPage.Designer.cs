@@ -36,17 +36,17 @@
             label2 = new Label();
             logInButton = new Button();
             groupBox1 = new GroupBox();
+            Reg_Button = new Button();
             label3 = new Label();
             pictureBox1 = new PictureBox();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
-            tempDataGrid = new DataGridView();
             formChangerBindingSource = new BindingSource(components);
             formChangerBindingSource1 = new BindingSource(components);
+            button4 = new Button();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)tempDataGrid).BeginInit();
             ((System.ComponentModel.ISupportInitialize)formChangerBindingSource).BeginInit();
             ((System.ComponentModel.ISupportInitialize)formChangerBindingSource1).BeginInit();
             SuspendLayout();
@@ -62,8 +62,9 @@
             // 
             passwordBox.Location = new Point(94, 51);
             passwordBox.Name = "passwordBox";
+            passwordBox.PasswordChar = '*';
             passwordBox.Size = new Size(100, 23);
-            passwordBox.TabIndex = 1;
+            passwordBox.TabIndex = 0;
             // 
             // label1
             // 
@@ -91,12 +92,14 @@
             logInButton.Name = "logInButton";
             logInButton.Size = new Size(75, 23);
             logInButton.TabIndex = 0;
+            logInButton.TabStop = false;
             logInButton.Text = "Log In";
             logInButton.UseVisualStyleBackColor = true;
             logInButton.Click += logInButton_Click;
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(Reg_Button);
             groupBox1.Controls.Add(userNameBox);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(label2);
@@ -108,6 +111,16 @@
             groupBox1.TabIndex = 4;
             groupBox1.TabStop = false;
             groupBox1.Text = "Log In";
+            // 
+            // Reg_Button
+            // 
+            Reg_Button.Location = new Point(13, 80);
+            Reg_Button.Name = "Reg_Button";
+            Reg_Button.Size = new Size(75, 23);
+            Reg_Button.TabIndex = 4;
+            Reg_Button.Text = "Register";
+            Reg_Button.UseVisualStyleBackColor = true;
+            Reg_Button.Click += Reg_Button_Click;
             // 
             // label3
             // 
@@ -139,7 +152,7 @@
             button1.TabIndex = 8;
             button1.Text = "View Vendors";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            button1.Click += View_Vendors_Button_Click;
             // 
             // button2
             // 
@@ -150,7 +163,7 @@
             button2.TabIndex = 9;
             button2.Text = "Create Vendors";
             button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            button2.Click += Edit_Vendors_Button_Click;
             // 
             // button3
             // 
@@ -162,15 +175,6 @@
             button3.Text = "Edit Vendors";
             button3.UseVisualStyleBackColor = true;
             // 
-            // tempDataGrid
-            // 
-            tempDataGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            tempDataGrid.Location = new Point(19, 249);
-            tempDataGrid.Name = "tempDataGrid";
-            tempDataGrid.RowTemplate.Height = 25;
-            tempDataGrid.Size = new Size(342, 150);
-            tempDataGrid.TabIndex = 11;
-            // 
             // formChangerBindingSource
             // 
             formChangerBindingSource.DataSource = typeof(formChanger);
@@ -179,13 +183,27 @@
             // 
             formChangerBindingSource1.DataSource = typeof(formChanger);
             // 
+            // button4
+            // 
+            button4.Enabled = false;
+            button4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            button4.Location = new Point(367, 349);
+            button4.Name = "button4";
+            button4.Size = new Size(223, 44);
+            button4.TabIndex = 11;
+            button4.TabStop = false;
+            button4.Text = "Modify Access Rights";
+            button4.UseVisualStyleBackColor = true;
+            button4.Visible = false;
+            button4.Click += Change_Rights_Button_Click;
+            // 
             // frontPage
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(254, 254, 253);
             ClientSize = new Size(902, 549);
-            Controls.Add(tempDataGrid);
+            Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -198,7 +216,6 @@
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)tempDataGrid).EndInit();
             ((System.ComponentModel.ISupportInitialize)formChangerBindingSource).EndInit();
             ((System.ComponentModel.ISupportInitialize)formChangerBindingSource1).EndInit();
             ResumeLayout(false);
@@ -218,8 +235,9 @@
         private Button button1;
         private Button button2;
         private Button button3;
-        private DataGridView tempDataGrid;
         private BindingSource formChangerBindingSource;
         private BindingSource formChangerBindingSource1;
+        private Button Reg_Button;
+        private Button button4;
     }
 }

@@ -5,14 +5,15 @@ namespace VendorProject
     /*
      * todo:
      * update other forms (proper coding practice)
-     * create user class
+     * 
+     * 
+     *
      * 
      */
     public partial class frontPage : Form
     {
         formChanger formChanger = new formChanger();
         loginVerify loginVerify = new loginVerify();
-        User user = new User();
         public frontPage()
         {
             InitializeComponent();
@@ -20,14 +21,12 @@ namespace VendorProject
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            updateGridView();
-        }
-
-        private void updateGridView()
-        {
-            DataSet ds = DBConnection.GetDBConnection().GetDataSet("SELECT * FROM Users");
-            DataTable dt = ds.Tables[0];
-            tempDataGrid.DataSource = dt;
+            label3.Text = "Access Level: " + User.GetGroup();
+            if (User.GetGroup() != "System admin")
+            {
+                button4.Visible = false;
+                button4.Enabled = false;
+            }
         }
         /// <summary>
         /// takes username and password inputs to validate
@@ -36,23 +35,48 @@ namespace VendorProject
         {
             string username = userNameBox.Text;
             string password = passwordBox.Text;
-            bool verified;
-            verified = loginVerify.LoginVerification(username, password);
-            if (verified)
+            userNameBox.Text = "";
+            passwordBox.Text = "";
+            loginVerify.LoginVerification(username.ToLower(), password);
+            label3.Text = "Access Level: " + User.GetGroup();
+            if (User.GetGroup() == "System admin")
             {
-                user.Setter(loginVerify.GetUserId(), loginVerify.GetUserGroup());
+                button4.Visible = true;
+                button4.Enabled = true;
             }
-            label3.Text = "Access Level: " + user.GetGroup();
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void Reg_Button_Click(object sender, EventArgs e)
         {
+            string username = userNameBox.Text;
+            string password = passwordBox.Text;
+            userNameBox.Text = "";
+            passwordBox.Text = "";
+            loginVerify.RegisterUser(username.ToLower(), password);
+        }
+        private void View_Vendors_Button_Click(object sender, EventArgs e)
+        {
+            string username = User.GetGroup();
+            if (User.GetGroup() == "Standard User" || User.GetGroup() == "System admin" || User.GetGroup() == "Directing Manager")
+            {
+                formChanger.changeForm("viewVendors");
+            }
+        }
+        private void Edit_Vendors_Button_Click(object sender, EventArgs e)
+        {
+            if (User.GetGroup() == "Directing Manager")
+            {
+                formChanger.changeForm("createVendors");
 
-            formChanger.changeForm("viewVendors");
+            }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Change_Rights_Button_Click(object sender, EventArgs e)
         {
-            formChanger.changeForm("createVendors");
+            if (User.GetGroup() == "System admin")
+            {
+                formChanger.changeForm("changeRights");
+
+            }
         }
     }
 }
