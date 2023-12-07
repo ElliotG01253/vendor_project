@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -13,7 +14,7 @@ namespace VendorProject
         private DBConnection()
         {
             // Using SQL Server authentication
-            connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;Initial Catalog=Vendor_Information;User ID=yourUsername;Password=yourPassword;Connect Timeout=30";
+            connectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = C:\\Users\\Madin\\source\\repos\\vendor_project\\VendorProject\\VendorProject\\Vendor_Information.mdf; Integrated Security = True";
         }
 
         public static DBConnection GetDBConnection()

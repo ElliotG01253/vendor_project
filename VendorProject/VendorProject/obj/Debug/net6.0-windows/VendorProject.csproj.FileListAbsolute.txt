@@ -109,3 +109,5 @@ C:\Users\Madin\Source\Repos\vendor_project\VendorProject\VendorProject\bin\Debug
 C:\Users\Madin\Source\Repos\vendor_project\VendorProject\VendorProject\bin\Debug\net6.0-windows\runtimes\osx-x64\native\SQLite.Interop.dll
 C:\Users\Madin\Source\Repos\vendor_project\VendorProject\VendorProject\bin\Debug\net6.0-windows\runtimes\win-x64\native\SQLite.Interop.dll
 C:\Users\Madin\Source\Repos\vendor_project\VendorProject\VendorProject\bin\Debug\net6.0-windows\runtimes\win-x86\native\SQLite.Interop.dll
+C:\Users\Madin\Source\Repos\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.Admin_vendors_control.resources
+C:\Users\Madin\Source\Repos\vendor_project\VendorProject\VendorProject\obj\Debug\net6.0-windows\VendorProject.Add_newVendors.resources

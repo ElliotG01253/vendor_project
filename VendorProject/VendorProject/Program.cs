@@ -10,8 +10,9 @@ namespace VendorProject
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new viewVendors());
+          //  ApplicationConfiguration.Initialize();
+          frontPage frontPage = new frontPage();
+            Application.Run(frontPage);
         }
     }
 }
