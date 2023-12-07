@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace VendorProject
 {
-    internal class User
+    internal static class User
     {
-        private int id;
-        private string group;
+        private static int id;
+        private static string group;
 
-        public void Setter(int userId, string userGroup)
+        public static void Setter(int userId, string userGroup)
         {
             id = userId;
             group = userGroup;
         }
-        public int GetUserId() { return id; }
-        public string GetGroup() { return group; }
+        public static int GetUserId() { return id; }
+        public static string GetGroup() { return group; }
     }
 }

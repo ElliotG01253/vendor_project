@@ -31,6 +31,11 @@ namespace VendorProject
                 createVendors createVendors = new createVendors();
                 createVendors.ShowDialog();
             }
+            if (formName == "changeRights")
+            {
+                changeRightsForm changeRightsForm = new changeRightsForm();
+                changeRightsForm.ShowDialog();
+            }
             currentForm.Close();//closes the previous form
         }
     }
