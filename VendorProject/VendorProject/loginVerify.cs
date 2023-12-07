@@ -19,7 +19,7 @@ namespace VendorProject
         /// <param name="password"></param>
         public void LoginVerification(string username, string password)
         {
-            DataSet ds = DBConnection.GetDBConnection().GetDataSet($"SELECT * FROM Users where Username = '{username}'");
+            DataSet ds = DBConnection.GetDBConnection().GetDataSet("A", $"SELECT * FROM Users where Username = '{username}'");
             if (ds.Tables[0].Rows.Count > 0)
             {
                 Hasher hasher = new Hasher();
@@ -41,7 +41,7 @@ namespace VendorProject
         }
         private string GetUserGroup()
         {
-            DataSet ds = DBConnection.GetDBConnection().GetDataSet($"SELECT g.name FROM groups_users gu , groups g where g.id = gu.groups_id AND gu.users_id = {userID}");
+            DataSet ds = DBConnection.GetDBConnection().GetDataSet("A",$"SELECT g.name FROM groups_users gu , groups g where g.id = gu.groups_id AND gu.users_id = {userID}");
 
             string groupname = ds.Tables[0].Rows[0]["name"].ToString()!.Trim();
             return groupname;

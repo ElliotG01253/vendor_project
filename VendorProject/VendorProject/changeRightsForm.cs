@@ -22,7 +22,7 @@ namespace VendorProject
         }
         private void updateGridView()
         {
-            DataSet dsUsers = DBConnection.GetDBConnection().GetDataSet("SELECT UserName, name from Users u, Groups g, Groups_Users gu Where g.Id = gu.Groups_Id and u.Id = gu.Users_Id");
+            DataSet dsUsers = DBConnection.GetDBConnection().GetDataSet("A", "SELECT UserName, name from Users u, Groups g, Groups_Users gu Where g.Id = gu.Groups_Id and u.Id = gu.Users_Id");
             DataTable tableUsers = dsUsers.Tables[0];
             dgvUsers.DataSource = tableUsers;
         }
@@ -38,7 +38,7 @@ namespace VendorProject
             if (textBox1.Text != "")
             {
                 string search = textBox1.Text;
-                DataSet dsUsers = DBConnection.GetDBConnection().GetDataSet($"SELECT UserName, name from Users u, Groups g, Groups_Users gu Where g.Id = gu.Groups_Id and u.Id = gu.Users_Id and (userName = '{search}' or name = '{search}')");
+                DataSet dsUsers = DBConnection.GetDBConnection().GetDataSet("A", $"SELECT UserName, name from Users u, Groups g, Groups_Users gu Where g.Id = gu.Groups_Id and u.Id = gu.Users_Id and (userName = '{search}' or name = '{search}')");
                 DataTable tableUsers = dsUsers.Tables[0];
                 dgvUsers.DataSource = tableUsers;
             }
@@ -70,9 +70,9 @@ namespace VendorProject
             string group = Groups.Text;
             string username = textBox2.Text;
 
-            DataSet ds = DBConnection.GetDBConnection().GetDataSet($"select Id From Groups where name = '{group}'");
+            DataSet ds = DBConnection.GetDBConnection().GetDataSet("A", $"select Id From Groups where name = '{group}'");
             int group_Id = int.Parse(ds.Tables[0].Rows[0]["id"].ToString());
-            ds = DBConnection.GetDBConnection().GetDataSet($"select Id From Users where UserName = '{username}'");
+            ds = DBConnection.GetDBConnection().GetDataSet("A", $"select Id From Users where UserName = '{username}'");
             DBConnection.GetDBConnection().RightsChanger(int.Parse(ds.Tables[0].Rows[0]["id"].ToString()), group_Id);
             updateGridView();
         }
