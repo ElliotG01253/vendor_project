@@ -2,14 +2,7 @@ using System.Data;
 
 namespace VendorProject
 {
-    /*
-     * todo:
-     * update other forms (proper coding practice)
-     * 
-     * 
-     *
-     * 
-     */
+
     public partial class frontPage : Form
     {
         formChanger formChanger = new formChanger();
