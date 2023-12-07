@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Madin\\Source\\Repos\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj": {}
+    "D:\\Vendor_group_project\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Madin\\Source\\Repos\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj": {
+    "D:\\Vendor_group_project\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Madin\\Source\\Repos\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj",
+        "projectUniqueName": "D:\\Vendor_group_project\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj",
         "projectName": "VendorProject",
-        "projectPath": "C:\\Users\\Madin\\Source\\Repos\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj",
-        "packagesPath": "C:\\Users\\Madin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Madin\\Source\\Repos\\vendor_project\\VendorProject\\VendorProject\\obj\\",
+        "projectPath": "D:\\Vendor_group_project\\vendor_project\\VendorProject\\VendorProject\\VendorProject.csproj",
+        "packagesPath": "C:\\Users\\Elliot\\.nuget\\packages\\",
+        "outputPath": "D:\\Vendor_group_project\\vendor_project\\VendorProject\\VendorProject\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Madin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Elliot\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
