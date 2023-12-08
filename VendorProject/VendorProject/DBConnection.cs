@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.ApplicationServices;
+using System;
 using System.Security.Cryptography;
 using System.Collections.Generic;
 using System.Data;
@@ -9,13 +10,20 @@ namespace VendorProject
     internal class DBConnection
     {
         private static DBConnection? _instance;
-        private string connectionString;
+        private string connectionStringA;
+        private string connectionStringV;
         private SqlConnection? connectionToDB;
 
         private DBConnection()
         {
             //connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C: \\Users\\eg593\\AppData\\Local\\Development\\vendor_project\\VendorProject\\VendorProject\\accountInfo.mdf";
-            connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=D:\\Vendor_group_project\\vendor_project\\VendorProject\\VendorProject\\accountInfo.mdf;Integrated Security=True";
+
+                connectionStringA = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Madin\\Source\\Repos\\vendor_project\\VendorProject\\VendorProject\\accountInfo.mdf;Integrated Security=True";
+
+
+                connectionStringV = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Madin\\source\\repos\\vendor_project\\VendorProject\\VendorProject\\Vendor_Information.mdf;Integrated Security=True";
+
+            
             //connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\accountInfo.mdf;Integrated Security=True;";
             //connectionString = Properties.Settings.Default.DBConnectionString;
             //connectionString = Properties.Settings.Default.DBConnectionString;
@@ -30,8 +38,21 @@ namespace VendorProject
             return _instance;
         }
 
-        public DataSet GetDataSet(string sqlStatement)
+        public DataSet GetDataSet(string db,string sqlStatement)
         {
+            string connectionString;
+            if (db == "A")
+            {
+                connectionString = connectionStringA;
+            }else if (db == "V") 
+            {
+                connectionString = connectionStringV;
+            }
+            else
+            {
+                connectionString = "";
+            }
+
             DataSet dataSet = new DataSet();
             using (connectionToDB = new SqlConnection(connectionString))
             {
@@ -60,7 +81,7 @@ namespace VendorProject
                 {
                     if (UNIsUnique(username))
                     {
-                        using (connectionToDB = new SqlConnection(connectionString))
+                        using (connectionToDB = new SqlConnection(connectionStringA))
                         {
                             GetDBConnection();
                             connectionToDB.Open();
@@ -105,7 +126,7 @@ namespace VendorProject
         private bool UNIsUnique(string username)
         {
             bool unique = true;
-            DataSet ds = DBConnection.GetDBConnection().GetDataSet($"SELECT Username FROM Users where Username = '{username}'");
+            DataSet ds = DBConnection.GetDBConnection().GetDataSet("A", $"SELECT Username FROM Users where Username = '{username}'");
             if (ds.Tables[0].Rows.Count > 0)
             {
                 unique = false;
@@ -122,7 +143,7 @@ namespace VendorProject
         {
             try
             {
-                using (connectionToDB = new SqlConnection(connectionString))
+                using (connectionToDB = new SqlConnection(connectionStringA))
                 {
                     connectionToDB.Open();
                     string sqlStatement = $"UPDATE Groups_Users SET Groups_Id = '{group}' where Users_Id = '{userId}'";
