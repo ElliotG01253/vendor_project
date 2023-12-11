@@ -399,3 +399,4 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+/VendorProject/VendorProject/Vendor_Information.mdf
